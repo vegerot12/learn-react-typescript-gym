@@ -32,8 +32,10 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             className="md:-mt-20">
+            {/*  Parent div of image (here evolve is the image) should be relative */}
             <div className="relative">
               {/* To put an imahe in the css before , we configure it in tailwind config */}
+              {/* Image div must be absolute and it will be top-20 from the image or content inside the parent div and z-[-1] to push it behind the content  and md:before:content means its only in large screens  */}
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
