@@ -90,7 +90,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           <div>
             {/* title */}
             <div className="relative">
-              <div className="before:absolute before: -top-20 beofre:-left-2- before:z-[-1] before:content-abstractwaves">
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -122,7 +122,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             </motion.div>
             {/* Button */}
             <div className="relative mt-16">
-              <div className="nefore:absolute before:-b-20 before:right-40 before:z-[-1] before:content-sparkles">
+              <div className="before:absolute before:-b-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Join now
                 </ActionButton>
